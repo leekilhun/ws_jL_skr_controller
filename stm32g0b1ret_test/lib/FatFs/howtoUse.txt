@@ -1,0 +1,2 @@
+1. drivers 폴더를 빌드에서 제외 
+2. 옵션 파일 중  syscall, unicode 외 빌드에서 제외 ]
