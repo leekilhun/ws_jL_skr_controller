@@ -131,24 +131,17 @@ typedef enum
 #define _DEF_CAN_STD          0
 #define _DEF_CAN_EXT          1
 
-#define _DEF_DXL1             0
-#define _DEF_DXL2             1
-#define _DEF_DXL3             2
-#define _DEF_DXL4             3
-
 
 #define constrain(amt,low,high) ((amt)<(low)?(low):((amt)>(high)?(high):(amt)))
 
-#ifndef max
-//#define max(a,b) (((a) > (b)) ? (a) : (b))
-//#define min(a,b) (((a) < (b)) ? (a) : (b))
+#ifndef CMAX
+#define CMAX(a,b) (((a) > (b)) ? (a) : (b))
+#define CMIN(a,b) (((a) < (b)) ? (a) : (b))
 #endif
 
-
-#ifndef map
-#define map(value, in_min, in_max, out_min, out_max) ((value - in_min) * (out_max - out_min) / (in_max - in_min) + out_min)
+#ifndef CMAP
+#define CMAP(value, in_min, in_max, out_min, out_max) ((value - in_min) * (out_max - out_min) / (in_max - in_min) + out_min)
 #endif
-
 
 #define FLASH_MAGIC_NUMBER      0x5555AAAA
 
