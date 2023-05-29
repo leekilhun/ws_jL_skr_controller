@@ -27,6 +27,9 @@ bool exhwInit(void)
 	ret &= pca8575pw_Init();
 #endif
 
+#ifdef _USE_EXHW_PCA9555PW_EX_IO
+	ret &= pca9555pw_Init();
+#endif
 
 #ifdef _USE_EXHW_MOTORS
   motorsInit();

@@ -91,10 +91,10 @@
 //#define        _SPI_SLAVE           _DEF_SPI2
 
 
-//#define _USE_HW_I2C
+#define _USE_HW_I2C
 #define      HW_I2C_MAX_CH          2
-#define        _I2C_EXT_IO          _DEF_I2C1
-#define        _I2C_EEPROM          _DEF_I2C2
+#define        _I2C_EEPROM          _DEF_I2C1
+#define        _I2C_EXT_IO          _DEF_I2C2
 
 #define _USE_HW_TIM
 #ifdef  _USE_HW_TIM

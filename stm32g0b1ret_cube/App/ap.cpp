@@ -11,15 +11,23 @@
 
 void apInit(void)
 {
+	delay(10);
 
 }
 
 
 void apMain(void)
 {
-	while(1)
+	uint32_t pre_main_ms = millis();
+
+	while (1)
 	{
 
+		if (millis() - pre_main_ms >= 500)
+		{
+			pre_main_ms = millis();
+
+		}
 	}
 }
 

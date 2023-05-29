@@ -25,11 +25,11 @@ void cliAt24c64eeprom(cli_args_t *args);
 #define EEPROM_MAX_SIZE       8192
 
 
-#define AT23C64_I2C           _DEF_I2C2
+#define AT23C64_I2C           _I2C_EEPROM
 
 
 static bool is_init = false;
-static uint8_t i2c_addr = (0xa4>>1);
+static uint8_t i2c_addr = (0xa0>>1); //scan id 0x50
 static uint8_t last_error = 0;
 
 

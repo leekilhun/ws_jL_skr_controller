@@ -31,6 +31,9 @@ void apInit(void)
 
 	cliOpen(_DEF_UART1, 115200);   // USB CDC
 
+	i2cBegin(_DEF_I2C1, I2C_FREQ_400KHz);
+	i2cBegin(_DEF_I2C2, I2C_FREQ_400KHz);
+
 #ifdef _USE_HW_CLI
 cliAdd("app", cliApp);
 #endif
